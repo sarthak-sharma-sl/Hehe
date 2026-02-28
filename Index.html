@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bestfriend Smile Button</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #ff4da6, #cc0066);
+        position: relative;
+    }
+
+    /* Floating elements base style */
+    .floating {
+        position: absolute;
+        animation: floatUp linear infinite;
+        opacity: 0.8;
+        user-select: none;
+    }
+
+    @keyframes floatUp {
+        0% {
+            transform: translateY(100vh) rotate(0deg);
+            opacity: 0;
+        }
+        20% { opacity: 1; }
+        100% {
+            transform: translateY(-10vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+    /* Different sizes */
+    .small { font-size: 18px; animation-duration: 18s; }
+    .medium { font-size: 28px; animation-duration: 22s; }
+    .large { font-size: 40px; animation-duration: 26s; }
+
+    .container {
+        z-index: 10;
+        text-align: center;
+    }
+
+    .smile-button {
+        padding: 18px 35px;
+        font-size: 18px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        color: white;
+        background: linear-gradient(45deg, #7a003c, #ff80bf);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+    }
+
+    .smile-button:hover {
+        transform: scale(1.08);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+
+    .smile-button:active {
+        transform: scale(0.96);
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div class="floating small" style="left:5%;">💖</div>
+<div class="floating medium" style="left:15%;">💕</div>
+<div class="floating large" style="left:25%;">💗</div>
+<div class="floating small" style="left:35%;">💓</div>
+<div class="floating medium" style="left:45%;">💞</div>
+<div class="floating large" style="left:55%;">💘</div>
+<div class="floating small" style="left:65%;">💖</div>
+<div class="floating medium" style="left:75%;">💕</div>
+<div class="floating large" style="left:85%;">💗</div>
+
+<!-- Floating Flowers -->
+<div class="floating small" style="left:10%;">🌸</div>
+<div class="floating medium" style="left:30%;">🌺</div>
+<div class="floating large" style="left:50%;">🌷</div>
+<div class="floating small" style="left:70%;">🌼</div>
+<div class="floating medium" style="left:90%;">🌹</div>
+
+<!-- Floating Stars -->
+<div class="floating small" style="left:20%;">⭐</div>
+<div class="floating medium" style="left:60%;">✨</div>
+<div class="floating large" style="left:80%;">🌟</div>
+
+<div class="container">
+    <button class="smile-button" onclick="window.location.href='https://youtu.be/H2f7MZaw3Yo?si=PfiUw9lSEmAm5gIS'">
+        Click to let your bestfriend make you smile 💖
+    </button>
+</div>
+
+</body>
+  </html>
